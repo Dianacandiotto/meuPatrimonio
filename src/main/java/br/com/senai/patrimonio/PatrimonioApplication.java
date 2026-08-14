@@ -22,6 +22,10 @@ public class PatrimonioApplication {
 		System.out.println(endereco.getRua());
 
 
+		Endereco enderecoComArgumento = new Endereco("rod luiz rosso", "85", "na rotula", "morro estevão","criciuma","sc");
+		System.out.println(enderecoComArgumento.getBairro());
+
+
 
 		}
 	}
