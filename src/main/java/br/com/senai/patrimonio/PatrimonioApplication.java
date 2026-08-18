@@ -21,8 +21,10 @@ public class PatrimonioApplication {
 		System.out.println();
 		System.out.println(endereco.getRua());
 
+		empresa.setEndereco(endereco);
+		System.out.println(empresa.getEndereco().getRua());
 
-		Endereco enderecoComArgumento = new Endereco("rod luiz rosso", "85", "na rotula", "morro estevão","criciuma","sc");
+		Endereco enderecoComArgumento = new Endereco(  "rod luiz rosso", "85", "na rotula", "morro estevão","criciuma","sc");
 		System.out.println(enderecoComArgumento.getBairro());
 
 

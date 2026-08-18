@@ -1,5 +1,7 @@
 package br.com.senai.patrimonio.model;
 
+import jakarta.persistence.Embedded;
+
 public class Empresa {
         private Long id;
         private String nome;
@@ -7,6 +9,9 @@ public class Empresa {
         private String cnpj;
         private String contato;
         private String unidade;
+
+        @Embedded
+        private Endereco endereco;
 
         public Empresa(){}
 
@@ -67,5 +72,13 @@ public class Empresa {
 
             this.unidade = unidade;
         }
+
+    public Endereco getEndereco() {
+        return endereco;
     }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+}
 
